@@ -1,10 +1,11 @@
 {
   "name": "changelog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "auto-changelog --template keepachangelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rlamsal1256/changelog/issues"
   },
-  "homepage": "https://github.com/rlamsal1256/changelog#readme"
+  "homepage": "https://github.com/rlamsal1256/changelog#readme",
+  "dependencies": {
+    "auto-changelog": "^1.13.0"
+  }
 }
