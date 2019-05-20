@@ -1,11 +1,11 @@
 {
   "name": "changelog",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "auto-changelog --template custom-template.hbs -p && git add CHANGELOG.md"
+    "version": "auto-changelog --template changelog-template.hbs -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
