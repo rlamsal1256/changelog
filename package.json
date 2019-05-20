@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "auto-changelog --template changelog-template.hbs --commit-limit 0 -p && git add CHANGELOG.md"
+    "changelog": "auto-changelog --template changelog-template.hbs && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,13 @@
   "homepage": "https://github.com/rlamsal1256/changelog#readme",
   "dependencies": {
     "auto-changelog": "^1.13.0"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn changelog"
+    }
   }
 }
