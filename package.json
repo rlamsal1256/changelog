@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "version": "auto-changelog --template keepachangelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog --template custom-template.hbs -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
